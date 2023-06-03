@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Simple HTML Table</title>
+  </head>
+  <body>
+    <form method="" action="">
+      <table border="1" align="center" width="600" >
+        <caption style="color: blue; font-size:30px; font-weight: bold;">
+          Registration form
+        </caption>
+        <tr>
+          <th>First name</th>
+          <td>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              maxlength="15"
+              style="width: 100%;"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Last name</th>
+          <td><input type="text" name="last_name" id="last_name" style="width: 100%;"/></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" style="width: 100%;"/></td>
+          </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" style="width: 100%;"/></td>
+        </tr>
+        <tr>
+          <th>Re-Enter Password</th>
+          <td><input type="password" style="width: 100%;"/></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+              <input type="radio" name="g" value="male" /> Male            
+              <input type="radio" name="g" value="female" /> Female
+            </td>
+          </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="number" style="width: 100%;"/></td>
+        </tr>
+        <tr>
+          <th>Phone Number</th>
+          <td><input type="number" style="width: 100%;"/></td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td><textarea rows="12" cols="25" style="width: 100%;"></textarea></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><input type="text" style="width: 100%;"></td>
+          </tr>
+          <tr>
+            <th>Country</th>
+            <td>
+              <select name="country">
+                <option value="" selected="selected" disabled="disabled">
+                  Choose your country
+                </option>
+                <option value="1">England</option>
+                <option value="2">India</option>
+              </select>
+            </td>
+          </tr>  
+        <tr>
+          <th>Languages known</th>
+          <td>
+            <input type="checkbox" name="sp[]" value="c" /> English
+            <input type="checkbox" name="sp[]" value="f" /> Kannada
+            <input type="checkbox" name="sp[]" value="h" /> Hindi
+            <input type="checkbox" name="sp[]" value="h" /> Telugu
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox">Hereby I declare all the given details are true</td>
+        </tr>
+        <tr align="right">
+            <td colspan="2">Log in to <a href="www.ethunus.com">Ethunus</a>website</td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
