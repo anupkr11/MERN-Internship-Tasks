@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="btn1()">show time</button>
+    <br />
+    <p id="time"></p>
+    <button onclick="btn2()">show date</button>
+    <p id="date"></p>
+    <script>
+      function btn1() {
+        var t1 = new Date();
+        document.getElementById("time").innerHTML = t1;
+      }
+      function btn2() {
+        var today = new Date();
+
+        //Extract the date and Format it to YYYY/MM/DD
+        var year = today.getFullYear();
+
+        // if the month is lesser than 10, adding 0 as a first digit
+        // and then concatenating month number
+        var month =
+          (today.getMonth() + 1 < 10 ? "0" : "") + (today.getMonth() + 1);
+
+        // if the day is lesser than 10, adding 0 as a first digit
+        // and then concatenating month number
+        var day = (today.getDate() + 1 < 10 ? "0" : "") + today.getDate();
+
+        var currentDate = year + "/" + month + "/" + day;
+        document.getElementById("date").innerHTML = currentDate;
+      }
+    </script>
+  </body>
+</html>
