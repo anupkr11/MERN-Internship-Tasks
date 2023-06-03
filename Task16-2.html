@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth child </title>
+    <style>
+        #first{
+            background-color: green;
+        }
+        
+        .wp-table tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        .wp-table tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        
+        .wp-table tr {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .wp-table th:first-child, 
+        .wp-table td:first-child {
+            padding-left: 16px;
+        }
+        
+        
+        .wp-table td, 
+        .wp-table th {
+            padding: 8px 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        .wp-table th {
+            font-weight: bold;
+        }
+         
+        .wp-table {
+            font-size: 13px!important;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table class="wp-table">
+        <tr id="first">
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr id="first-row">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+        <tr>
+            <td>m</td>
+            <td>n</td>
+            <td>o</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>q</td>
+            <td>r</td>
+        </tr>
+        <tr>
+            <td>s</td>
+            <td>t</td>
+            <td>u</td>
+        </tr>
+    </table>
+</body>
+</html>
